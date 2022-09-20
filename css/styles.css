@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  /*Primary*/
+  /*main background*/
+  --primary-very-dark-blue: hsl(233, 47%, 7%);
+  /*card background*/
+  --primary-dark-desaturated-blue: hsl(244, 38%, 16%);
+  /*accent*/
+  --primary-soft-violet: hsl(277, 64%, 61%);
+
+  /*Neutral*/
+  /*main heading, stats*/
+  --neutral-white: hsl(0, 0%, 100%);
+  /*main paragraph*/
+  --neutral-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*stat headings*/
+  --neutral-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+main {
+  width: 900px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  background-color: var(--primary-dark-desaturated-blue);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.left {
+  padding: 50px 120px 0px 60px;
+}
+
+.left h1 {
+  font-size: 1.75rem;
+  color: var(--neutral-white);
+}
+
+.color {
+  color: var(--primary-soft-violet);
+}
+
+.text {
+  padding-top: 25px;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  color: var(--neutral-slightly-transparent-white);
+}
+
+.dataset {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-top: 50px;
+  display: flex;
+  gap: 10px;
+  color: var(--neutral-white);
+  justify-content: space-between;
+}
+
+.dataset-container span {
+  font-size: 0.625rem;
+  color: var(--neutral-slightly-transparent-white);
+}
+
+.image {
+  height: 350px;
+  background-color: var(--primary-soft-violet);
+}
+
+.image img {
+  height: 350px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  mix-blend-mode: multiply;
+  opacity: 82%;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
