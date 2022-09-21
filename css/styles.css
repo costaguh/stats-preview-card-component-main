@@ -27,13 +27,16 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--primary-very-dark-blue);
-  display: grid;
-  width: 100vw;
+  display: flex;
   height: 100vh;
   place-items: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 main {
-  width: 900px;
+  width: 56.25em;
   display: flex;
   background-color: var(--primary-dark-desaturated-blue);
   border-top-left-radius: 5px;
